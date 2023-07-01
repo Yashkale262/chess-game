@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Online Chess Game
+This is a web application that allows users to play chess online. It provides two main options for playing the game:  Playing online with a random opponent or challenging a friend by generating a join code.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This game is hosted at: https://chess-game-yash.onrender.com/
 
-## Available Scripts
+## Features
+- Play Online: By choosing this option, the user will be connected to another player who is also looking to play online. The system will match the user with a suitable opponent and start the game.
 
-In the project directory, you can run:
+- Challenge a Friend: Selecting this option will generate a unique join code that can be shared with a friend. The opponent player can enter this join code to connect with the user and start playing the game.
+- A timer is implemented to track the time for each player's turn. This ensures that the game progresses smoothly and players have a limited amount of time to make their moves.
 
-### `npm start`
+## Game Logic
+1. The entire logic for the chess game has been developed and implemented in this web application. The logic includes the following components:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Chessboard: The game board consists of an 8x8 grid with 64 squares. Each square can contain a chess piece or be empty.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Chess Pieces: All standard chess pieces are implemented, including the king, queen, rook, bishop, knight, and pawn. Each piece has its own movement rules and constraints.
 
-### `npm test`
+4. Valid Moves: The logic ensures that players can only make valid moves according to the rules of chess. Illegal moves are not allowed.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. Capturing Pieces: When a player moves their piece to a square occupied by an opponent's piece, the opponent's piece is captured and removed from the board.
 
-### `npm run build`
+6. Check and Checkmate: The logic checks for check and checkmate conditions, ensuring that players cannot make moves that would put their own king in checkmate.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+7. Stalemate Draw: The logic detects a stalemate draw when a player is not in check but has no legal moves available. In this case, the game ends in a draw.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+8. Castling: The logic allows players to perform castling, a special move involving the king and one of the rooks. This move is subject to certain conditions and can be used for strategic purposes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
+The web application has been developed using the following technologies:
 
-### `npm run eject`
+Node.js: A JavaScript runtime used for building the server-side components of the application.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Socket .io: A library for enabling real-time communication between the server and the clients. It is used to facilitate online gameplay and messaging.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React: A JavaScript library for building user interfaces. React is used to create the interactive components and user interface of the web application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+CSS: Cascading Style Sheets (CSS) is used for styling the web application and creating a visually appealing user interface.

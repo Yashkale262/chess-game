@@ -1,0 +1,189 @@
+.boardPage{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.board{
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    /* margin-left: 300px; */
+    position: relative;
+    width: calc(8 * 65px)
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.cell{
+    width:65px;
+    height: 65px;
+}
+
+.possibleMoves{
+    background-color: "#16FF00" !important;
+    border: "2px solid black";
+    box-sizing: "border-box";
+}
+
+img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%
+}
+
+.chanceDisplay{
+    font-size: 30px;
+    font-family: 'Architects Daughter', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.promote{
+    position: absolute;
+    top: calc((8 * 65px)/2 - 75px);
+    left: calc((8 * 65px)/2 - 175px);
+    /* margin: auto; */
+    background-image: radial-gradient( skyblue, black);
+    height: 150px;
+    width: 350px;
+    padding: 10px;
+    border-radius: 45px;
+    
+}
+
+.promotehead{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 20px;
+    color: "white"
+    
+}
+.imgpromote{
+    height: 70px;
+    width: 70px;;
+    background-color: aliceblue;
+    border: 1px solid black;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.imgpromote:hover{
+    background-color: green;
+}
+
+.winLossBox{
+    position: absolute;
+    top: calc((8 * 65px)/2 - 75px);
+    left: calc((8 * 65px)/2 - 200px);
+    height: 150px;
+    width: 400px;
+    padding: 10px;
+    border-radius: 45px;
+    background-image: radial-gradient( skyblue, black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.winLoss{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 30px;
+}
+
+.red{
+    background-image: radial-gradient( red, orange) !important ;
+}
+
+.green{
+    background-image: radial-gradient( green, lightgreen) !important;
+}
+
+@media (max-width: 520px){
+    .board{
+        width: calc(8 * 52px)
+    }
+    .cell{
+        width:52px;
+        height:52px;
+    }
+    .promote{
+        top: calc((8 * 52px)/2 - 60px);
+        left: calc((8 * 52px)/2 - 112px);
+        height: 120px;
+        width: 270px;
+        padding: 10px;
+        border-radius: 25px;
+    }
+    .imgpromote{
+        height: 52px;
+        width: 52px;;
+        background-color: aliceblue;
+        border: 1px solid black;
+        margin: 2px;
+        border-radius: 5px;
+    }
+    .winLossBox{
+        top: calc((8 * 52px)/2 - 60px);
+        left: calc((8 * 52px)/2 - 112px);
+        height: 120px;
+        width: 270px;
+        padding: 10px;
+        border-radius: 25px;
+    }
+    .chanceDisplay{
+        font-size: 20px;
+    }
+    .promotehead{
+        font-size: 20px;
+    }
+    .winLoss{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 420px){
+    .board{
+        width: calc(8 * 40px)
+    }
+    .cell{
+        width:40px;
+        height:40px;
+    }
+    .promote{
+        top: calc((8 * 40px)/2 - 60px);
+        left: calc((8 * 40px)/2 - 112px);
+        height: 120px;
+        width: 225px;
+        padding: 10px;
+        border-radius: 25px;
+    }
+    .imgpromote{
+        height: 40px;
+        width: 40px;;
+        background-color: aliceblue;
+        border: 1px solid black;
+        margin: 2px;
+        border-radius: 5px;
+    }
+    .winLossBox{
+        top: calc((8 * 40px)/2 - 60px);
+        left: calc((8 * 40px)/2 - 112px);
+        height: 120px;
+        width: 225px;
+        padding: 10px;
+        border-radius: 25px;
+    }
+    .chanceDisplay{
+        font-size: 18px;
+    }
+    .promotehead{
+        font-size: 18px;
+    }
+    .winLoss{
+        font-size: 18px;
+    }
+}
