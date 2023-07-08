@@ -3,7 +3,7 @@ This is a web application that allows users to play chess online. It provides tw
 
 This game is hosted at: https://chess-game-yash.onrender.com/
 
-Backend github repo: https://github.com/Yashkale262/chess-game-backend/edit/main/README.md
+Backend github  repo: https://github.com/Yashkale262/chess-game-backend/edit/main/README.md
 ## Features
 - Play Online: By choosing this option, the user will be connected to another player who is also looking to play online. The system will match the user with a suitable opponent and start the game.
 
