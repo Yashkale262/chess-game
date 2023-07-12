@@ -388,7 +388,7 @@ const king_moves=(boardStat,player,rank,file)=>{
             temp[rank][file].piece="king";
             temp[rank][file].playerr=player;
             if(is_check)continue;
-            console.log("castle: ",nj);
+            
         }
         let move={
             fromRank:rank,
