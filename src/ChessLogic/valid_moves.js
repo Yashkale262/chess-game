@@ -8,12 +8,12 @@ const valid_pos=(i,j)=>{
 
 export const valid_moves = (boardStat,player,changeValidMoves) => {
     // let boardStat=boardStatus;
-    console.log("valid moves called");
-    console.log(boardStat);
-    console.log(player);
+    //console.log("valid moves called");
+    //console.log(boardStat);
+    //console.log(player);
     if(player!==0&&player!==1)return;
     if(boardStat===undefined||boardStat.length===0)return;
-    console.log("valid moves running");
+    //console.log("valid moves running");
     let board=boardStat.board;
    
 
